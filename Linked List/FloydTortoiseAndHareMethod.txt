@@ -1,0 +1,19 @@
+for detecting a cycle  we ues floyd tortoise and hare method
+
+we will have one slow pointer and one fast pointer
+
+we will increment fast pointer as fast = fast->next->next
+
+where as we will increment slow pointer as slow = slow->next
+
+if fast == slow at any pointer return true
+
+or else if fast becomes NULL then return false
+
+TO DETECT THE START OF A cycle
+
+if fast == slow
+    set slow to head
+    then increment both and slow as slow = slow->next and fast = fast->next
+    when slow == fast
+        return slow/fast
