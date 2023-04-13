@@ -142,8 +142,8 @@ vector<int> findSpiral(Node *root)
         if(curr->right){
             q.push(curr->right);
         }
-        q.pop();
         answer.push_back(curr->data);
+        q.pop();
     }
     return answer;
 }
